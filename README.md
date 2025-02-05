@@ -8,6 +8,4 @@ Hello,
 Made With ❤ by Sahil Kumar.
 
 
-![](preview/image1.png)
-
-![](preview/image2.png)
+![](images/my-portfolio-2.png)

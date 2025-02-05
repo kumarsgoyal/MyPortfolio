@@ -1,236 +1,703 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- 
+░██████╗░█████╗░██╗░░██╗██╗██╗░░░░░  
+██╔════╝██╔══██╗██║░░██║██║██║░░░░░  
+╚█████╗░███████║███████║██║██║░░░░░  
+░╚═══██╗██╔══██║██╔══██║██║██║░░░░░  
+██████╔╝██║░░██║██║░░██║██║███████╗  
+╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚══════╝
+What are you doing here?! you sneaky developer...
+-->
+
 <head>
-    <title> Sahil Kumar | Portfolio </title>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Kumar | Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/main-favicon.png" type="image/x-icon">
 </head>
-<body onLoad="typeWriter()">
-    <nav id="navbar" class="">
-        <div class="nav-wrapper">
-          <!-- Navbar Links -->
-          <ul id="menu">
-            <li><a href="#about" method="post">About</a></li>
-            <li><a href="#skills" method="post">Skills</a></li>
-            <li><a href="#projects" method="post">Projects</a></li>
-            <li><a href="#contact" method="post">Contact</a></li>
-          </ul>
-        </div>
-    </nav>
-      
-      
-      <!-- Menu Icon -->
-    <div class="menuIcon">
-        <span class="icon icon-bars"></span>
-        <span class="icon icon-bars overlay"></span>
-    </div>
-      
-      
-    <div class="overlay-menu">
-        <ul id="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-    </div>
-    <script src="scripts/script.js"></script>
 
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-8 col-sm-12 hello">
-                    <center>
-                    <div class="about-heading">Hello, I'm</div>
-                    <h2 id="demo"></h2>
+<body>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./images/nav-avatar.png" alt="avatar" width="80">
+                </figure>
 
-                    <p>Welcome to my Portfolio!</p></center>
+                <div class="info-content">
+                    <h1 class="name" title="Richard Hanrick">Sahil Kumar</h1>
+                    <p class="title">Developer</p>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-12 about">
-                    <h3 class="font-weight-bold">About Me</h3>
-                    <p data-aos="fade-in">I am Sahil, currently a Third-Year Undergrad, pursuing Computer Science and Engineering.</p>
-                    <p data-aos="fade-in">My field of interest is Web Development, Front End Designing and Competitive Programming.</p>
-                    <p data-aos="fade-in">I am also an OpenSource enthusiast. I believe it is a beautiful way of collaborating. I am an active contributor in various projects, helping people in their initiatives.</p>
-                    <h6 class="font-weight-bold pt-5">Connect With Me :</h6>
-                    <div class="social-media pt-3">
-                        <a href="mailto:kumar.sgoyal@gmail.com" class="fa fa-envelope mr-2" aria-hidden="true" data-aos="example-anim3"></a> 
-                        <a href="https://www.linkedin.com/in/kumarsgoyal/" class="fa fa-linkedin mr-2" aria-hidden="true" data-aos="example-anim3"></a> 
-                        <a href="https://github.com/kumarsgoyal"><img src="Images/github.png" data-aos="example-anim3"></a>
-                    </div>
-                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
             </div>
-        </div>
-    </section>
-    <script src="scripts/name.js"></script>
 
-    <section id="education">
-        <div class="container pt-5">
-            <h1 class="pt-5">My Alma Mater</h1>
-            <hr class="pb-5" width="15%">
-            <center>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="vl">
-                        <div class="edu-content" data-aos="fade-in"> 
-                        <div class="grad">B.E in Computer Science and Engineering</div>
-                        <div class="year mb-3">( 2017-2021 )</div>
-                        <div class="school mb-5">Chitkara University, Rajpura</div>
-                        <hr width="90%">
-                        <div class="grad mt-5 mb-3">Higher Education</div>
-                        <div class="school">G.S.S.S., Rajpura</div>                        
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
                         </div>
-                    </div>
-                </div>
-            </div>
-            </center>
-        </div>
 
-    </section>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
 
-    <!--SkillSet Section-->
-    <section id="skills">
-        <div class="container pt-1">
-            <h1 class="pt-3 pb-2">My Skillset</h1>
-            <hr>
-
-            <center>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="vl">
-                        <div class="edu-content" data-aos="fade-in"> 
-                        <div class="grad">Web :-</div>
-                        <div class="school mb-5">HTML, CSS, JavaScript, jQuery</div>
-                        <hr width="90%">
-                        <div class="grad mt-5 mb-3">Programing Languages</div>
-                        <div class="school">C, C++, JAVA</div>    
-                        <hr width="90%">
-                        <div class="grad mt-5 mb-3">Query Languages</div>
-                        <div class="school">SQL,PLSQL</div>                        
+                            <a href="mailto:kumar.sgoyal@gmail.com" class="contact-link">kumar.sgoyal@gmail.com</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            </center>
-           
-        </div>
-    </section>
+                    </li>
 
-    <section id="projects">
-        <div class="container pt-5 pb-5">
-            <h1 class="pt-5 pb-2">Projects</h1>
-            <hr class="pb-5">
-            <center>
-            <div class="row pt-2">
-                <div class="col-lg-4 mb-3">
-                    <div class="exp-div bg1" data-aos="zoom-in">
-                        <center>
-                        <i class="fa fa-user mb-3"></i><br>
-                        <div class="post">Web</div>
-                        <div class="pos">Mobile Selling Website</div>
-                        <font size="2">HTML, jQuery<br> JavaScript</font>
-                        </center>
-                    </div>              
-
-                </div>
-                <div class="col-lg-4 mb-3">
-                    <div class="exp-div bg2" data-aos="zoom-in">
-                        <center>
-                        <i class="fa fa-user mb-3"></i><br>
-                        <div class="post">Full Stack</div>
-                        <div class="pos">Evnt Management</div>
-                        <font size="2">MERN Stack</font>
-                        </center>
-                    </div>              
-
-                </div>
-                <div class="col-lg-4">
-                    <div class="exp-div bg3" data-aos="zoom-in">
-                        <center>
-                        <i class="fa fa-user mb-3"></i><br>
-                        <div class="post">IP</div>
-                        <div class="pos">Facial Recognition System</div>
-                        <font size="2">python</font>
-                        </center>
-                    </div>              
-
-                </div>
-
-                <div class="col-lg-2">
-
-                </div>
-                <div class="col-lg-4">
-                    <div class="exp-div bg3" data-aos="zoom-in">
-                        <center>
-                        <i class="fa fa-user mb-3"></i><br>
-                        <div class="post">Web</div>
-                        <div class="pos">portfolio</div>
-                        <font size="2">HTML, JavaScript</font>
-                        </center>
-                    </div>              
-
-                </div>
-                <div class="col-lg-4">
-                    <div class="exp-div bg3" data-aos="zoom-in">
-                        <center>
-                        <i class="fa fa-user mb-3"></i><br>
-                        <div class="post">Full Stack</div>
-                        <div class="pos">Shopping-cart</div>
-                        <font size="2">Mern</font>
-                        </center>
-                    </div>              
-
-                </div>
-                <div class="col-lg-2">
-
-                </div>
-            </div>
-            </center>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container pt-5">
-            <h1>Drop a Message!</h1>
-            <hr class="pb-3" width="30%">
-            <h4 class="pb-5">I'd love to hear from you </h4>
-            <div class="row form">
-                <div class="col-lg-12 pt-3">
-                    <form action="" method="post" enctype="text/plain">
-                        <div class="row">
-                          <div class="col-lg-6 col-sm-12 px-5 pt-4 pb-4">
-                            <input type="text" class="form-control no-border" id="name" placeholder="Name" required>
-                          </div>
-                          <div class="col-lg-6 col-sm-12 px-5 pt-4 pb-3">
-                            <input type="email" class="form-control no-border" placeholder="Email Address" name="email" required>
-                          </div>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
                         </div>
-                        <div class="row">
-                            <div class="col p-5">
-                                <textarea name="message" rows="4" class="form-control no-border" placeholder="Your Message" required></textarea>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="" class="contact-link">+91 99XXX-XXXXX</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>India</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://github.com/kumarsgoyal" class="social-link"><ion-icon
+                                name="logo-github"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/kumarsgoyal/"
+                            class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I am a passionate software developer with 3+ years of experience in building scalable and
+                        high-performance applications. My technical expertise spans both backend and frontend
+                        technologies, including Java, Spring, React, Go, and Kubernetes.
+                    </p>
+                    <p> I have a strong foundation
+                        in computer science and software engineering principles, which allows me to design and
+                        implement robust solutions to complex problems. I am always eager to learn new technologies
+                        and take on new challenges, and I am excited about the opportunity to contribute to
+                        innovative projects that make a positive impact on people's lives.
+                    </p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./images/icon-design.png" alt="icon" width="40">
                             </div>
-                        </div>
-                        <center><button type="submit" class="btn mt-3 submit">Submit</button></center>
-                    </form>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Application Development</h4>
+                                <p class="service-item-text">The most modern and high-quality applications made at a
+                                    professional level.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./images/icon-dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+                                <p class="service-item-text">High-quality development of sites at the professional
+                                    level.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Recommendations</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/avatar-1.png" alt="avatar"
+                                        data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sagar V</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Sahil is an exceptional professional with whom I had the pleasure of working
+                                        closely at CDK and Genpact. Throughout our time together, he consistently
+                                        demonstrated a high level of expertise in solving complex problems and
+                                        contributed significantly to our team's success.
+
+                                        What sets Sahil apart is their ability to solve an issue with his great problem
+                                        solving skills. He is very proactive, always willing to take on new challenges,
+                                        and maintain a positive attitude under high pressure. Their work ethic and
+                                        commitment to delivering high-quality results make them a valuable asset to any
+                                        team.
+                                        I highly recommend Sahil for any opportunity. His dedication, skill set, and
+                                        collaborative spirit will undoubtedly make them a tremendous asset to any
+                                        organization..
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/avatar-1.png" alt="avatar"
+                                        data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Manjul Bhatt</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Sahil is an exceptional all-around engineer, known for his clear communication
+                                        and personable nature. He has strong hands-on experience in Java and ReactJS,
+                                        making him a versatile asset in both backend and frontend development. Sahil
+                                        consistently demonstrates a "can-do" attitude, and during his time working with
+                                        me, I always had full confidence in his ability to find solutions and deliver
+                                        results. His technical expertise, combined with his proactive approach to
+                                        problem-solving, ensures that he can tackle any challenge efficiently and
+                                        effectively
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/avatar-1.png" alt="avatar"
+                                        data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Baji Sayyad</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Sahil is quick learner and has high technical standards. He can learn any
+                                        technologies as per project need in lesser time. He is a good team player. He is
+                                        very good at communication as well as debugging the technical issues. I would
+                                        highly recommend Sahil for any role.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/avatar-1.png" alt="avatar"
+                                        data-testimonials-avatar width="60">
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>PL Nagaraju</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I had the privilege of working with Sahil Kumar in Vehicle cloud team for more
+                                        than one and half year at CDK Global. Sahil is proactive, result oriented,
+                                        responsible and technically good employee and he is always ready to put all his
+                                        energy and time to get the job done. He has an exceptional learning skills and
+                                        analytical skill in Problem solving and Java technologies which makes him more
+                                        valuable. I would recommend him to anybody.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon
+                                name="close-outline"></ion-icon></button>
+                    </section>
                 </div>
-            </div>
+
+
+
+            </article>
+
+            <article class="resume " data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Chitkara University, &nbsp; Punjab</h4>
+                            <span>2017 - 2021</span>
+                            <p class="timeline-text">
+
+                                During my Bachelor of Engineering (BE) in Computer Science and Engineering (CSE), I
+                                gained in-depth knowledge of both the theoretical and practical aspects of computing. My
+                                studies covered a wide range of topics, including programming fundamentals, computer
+                                architecture, operating systems, databases, software engineering, problem-solving
+                                techniques, as well as collaboration and communication skills essential for working in
+                                the tech industry.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">G.S.S.S Mohinderganj, &nbsp; Rajpura </h4>
+                            <span>2015 - 2017</span>
+                            <p class="timeline-text">
+                                I pursued PCM (Physics, Chemistry, and Mathematics) in the Non-Medical stream, which
+                                provided me with a strong foundation in logical reasoning, analytical skills, and
+                                technical concepts. This background has enhanced my problem-solving abilities and
+                                prepared me for a career in technology and engineering
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">IBM, &nbsp; India</h4>
+                            <span>2024 - Present</span>
+                            <p class="timeline-text">I am currently working on the operator, focusing on multi-cluster disaster recovery and data management for Kubernetes environments.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Genpact, &nbsp; India </h4>
+                            <span>2023 - 2024</span>
+                            <p class="timeline-text">I  worked with a company to deliver high-quality solutions across North America, helping dealers efficiently manage live inventory.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">CDK Global, &nbsp; India</h4>
+                            <span>2021 - 2023</span>
+                            <p class="timeline-text">I worked with a company to deliver high-quality solutions across North America, helping dealers efficiently manage live inventory.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">My Skills</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/html.svg" alt="Html skill" class="tech-stack-logo" />
+							<span class="tooltip">HTML</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/css.svg" alt="css skill" class="tech-stack-logo" />
+							<span class="tooltip">CSS</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/js.svg" alt="js skill" class="tech-stack-logo" />
+							<span class="tooltip">JS</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/nodejs.svg" alt="Nodejs skill" class="tech-stack-logo" />
+							<span class="tooltip">Nodejs</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/react.svg" alt="React skill" class="tech-stack-logo" />
+							<span class="tooltip">React</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/redux.svg" alt="Redux skill" class="tech-stack-logo" />
+							<span class="tooltip">Redux</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/java.svg" alt="JAVA skill" class="tech-stack-logo" />
+							<span class="tooltip">JAVA</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/spring.svg" alt="Spring skill" class="tech-stack-logo" />
+							<span class="tooltip">Spring</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/postgres.svg" alt="Postgres skill" class="tech-stack-logo" />
+							<span class="tooltip">Postgres</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/rabbitmq.svg" alt="Rabbitmq skill" class="tech-stack-logo" />
+							<span class="tooltip">Rabbitmq</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/elasticsearch.svg" alt="Elasticsearch skill" class="tech-stack-logo" />
+							<span class="tooltip">Elasticsearch</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/golang.svg" alt="Go skill" class="tech-stack-logo" />
+							<span class="tooltip">Go</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/docker.svg" alt="Docker skill" class="tech-stack-logo" />
+							<span class="tooltip">Docker</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/kubernetes.svg" alt="Kubernetes skill" class="tech-stack-logo" />
+							<span class="tooltip">Kubernetes</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/linux.svg" alt="Linux skill" class="tech-stack-logo" />
+							<span class="tooltip">Linux</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/bash.svg" alt="Bash skill" class="tech-stack-logo" />
+							<span class="tooltip">Bash</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/git.svg" alt="Git skill" class="tech-stack-logo" />
+							<span class="tooltip">Git</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/github.svg" alt="Github skill" class="tech-stack-logo" />
+							<span class="tooltip">Github</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/aws.svg" alt="AWS skill" class="tech-stack-logo" />
+							<span class="tooltip">AWS</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/vscode.svg" alt="VSCode skill" class="tech-stack-logo" />
+							<span class="tooltip">VSCode</span>
+						</li>
+
+						<li class="tech-stack-box" data-aos="fade-up">
+							<img src="./icons/postman.svg" alt="Postman skill" class="tech-stack-logo" />
+							<span class="tooltip">Postman</span>
+						</li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web Design</button></li>
+                        <li class="filter-item"><button data-filter-btn>Applications</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select " data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item"><button data-select-item>All</button></li>
+                            <li class="select-item"><button data-select-item>Web Design</button></li>
+                            <li class="select-item"><button data-select-item>Applications</button></li>
+                            <li class="select-item"><button data-select-item>Web Development</button></li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://github.com/kumarsgoyal" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/github-profile.png" alt="github profile" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">GitHub Profile</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://kumarsgoyal.github.io/my-portfolio/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/my-portfolio-1.png" alt="my portfolio" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">My Portfolio</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://kumarsgoyal.github.io/MyPortfolio/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/my-portfolio-2.png" alt="my portfolio" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">GitHub Profile</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://github.com/kumarsgoyal/facial-recognition-system" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/facial-recognition-system.jpg" alt="facial-recognition-system" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">facial recognition system</h3>
+                                <p class="project-category">Application</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://github.com/kumarsgoyal/pexels-go" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/pexel-go.png" alt="pexels-go" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">pexels go</h3>
+                                <p class="project-category">Library</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://github.com/kumarsgoyal/shopping" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/shopping.jpg" alt="e-commerce" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">E-commerce</h3>
+                                <p class="project-category">Mern Application</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://github.com/kumarsgoyal/EVNT" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/event-management.jpg" alt="event-management" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Event management</h3>
+                                <p class="project-category">Mern Application</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="https://github.com/kumarsgoyal/spotify-clone" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/spotify.png" alt="Spotify-clone" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Spotify Clone</h3>
+                                <p class="project-category">React Application</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </article>
+
+            <article class="blog " data-page="blog">
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item">
+                            <a href="https://github.com/kumarsgoyal/git/blob/main/README.md" target="_blank">
+                                <figure class="blog-banner-box">
+                                    <img src="./images/git.png" alt="getting started with git"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Git</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-02-23">Dec 30, 2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title"></h3>
+                                    <p class="blog-text">
+                                        Welcome to the Git Basics Guide repository! This repo is designed to help beginners learn Git, covering essential commands, workflows, and best practices. Whether you're just starting with version control or need a refresher, this guide will walk you through the core concepts of Git step-by-step.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="https://github.com/kumarsgoyal/containers-from-scratch/blob/main/README.md" target="_blank">
+                                <figure class="blog-banner-box">
+                                    <img src="./images/docker.webp" alt="build containers from scratch"
+                                        loading="lazy">
+                                </figure>
+
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Containers From Scratch</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-01-29">Dec 05, 2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title"></h3>
+                                    <p class="blog-text">
+                                        Build Your Own Container Using Less than 100 Lines of Go. This is a toy container build from scratch in Go solely for learning purpose. It uses namespaces and cgroups.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </article>
+
+            <article class="contact " data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d77.2090!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d037f515ab3e7%3A0x1048cbe772c32e79!2sDelhi%2C%20India!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                            width="400" height="300" loading="lazy"></iframe>
+
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name"
+                                required>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Email Address"
+                                required>
+                        </div>
+                        <textarea id="message" name="message" class="form-input" placeholder="Your Message"
+                            required></textarea>
+                        <button class="form-btn" type="button" onclick="sendEmail()">
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+
+                </section>
+            </article>
         </div>
-    </section>
-    
-    <footer>
-        <hr>
-        <center><h5 class="footer">Made With ❤ by <a href="#about">Sahil Kumar</a>.</h5></center>
-    </footer>
-    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script><script  src="scripts/animation.js"></script>
+    </main>
+
+    <script src="./js/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="./js/ionicons.js"></script>
 </body>
+
 </html>
